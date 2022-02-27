@@ -1,0 +1,27 @@
+{
+	"Lixo": {
+		"symbol": ":hiking_boot: Lixo",
+		"max": 70,
+		"min": 30
+	},
+	"Commun": {
+		"symbol": "<:peixe_bronze:853317907895287889> Peixe comum",
+		"max": 90,
+		"min": 50
+	},
+	"Incommun": {
+		"symbol": "<:peixe_prateado:853317908105265162> Peixe incomum",
+		"max": 175,
+		"min": 130
+	},
+	"Raro": {
+		"symbol": "<:peixe_ouro:853317908637417472> Peixe raro",
+		"max": 400,
+		"min": 250
+	}, 
+  "Lendario": {
+    "symbol": "<:peixe_esmeralda:853317907714277376> Peixe lendario", 
+    "max": 800,
+    "min": 450
+  } 
+}

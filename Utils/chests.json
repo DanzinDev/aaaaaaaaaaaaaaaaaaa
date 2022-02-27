@@ -1,0 +1,22 @@
+{
+	"Commun": {
+		"symbol": "<:common:917844959007240293>(Caixa commun)",
+		"max": 100,
+		"min": 50
+	},
+	"Incommun": {
+		"symbol": "<:uncommon:917845106109849600>(Caixa Incommun)",
+		"max": 200,
+		"min": 150
+	},
+	"Raro": {
+		"symbol": "<:rare:917845166876921886>(Caixa rara)",
+		"max": 300,
+		"min": 250
+	}, 
+  "Lendario": {
+    "symbol": "<:epic:917845212972322896>(Caixa lendaria)", 
+    "max": 400,
+    "min": 350
+  } 
+}
