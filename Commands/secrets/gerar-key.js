@@ -22,7 +22,7 @@ module.exports = {
     const member = message.mentions.users.first() || client.users.cache.get(args[0]) || message.author
     let keysDir = `bot/keys`
 
-    if (!["692051255891329105", "429631941151686656"].includes(message.author.id)) {
+    if (!["692051255891329105", "429631941151686656", "924822579842273321"].includes(message.author.id)) {
       return message.channel.send(`> Apenas meus desenvolvedores podem utilizar esse comando!`)
     }
     await database.ref(keysDir + "/" + code).set(true)

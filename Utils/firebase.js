@@ -19,7 +19,7 @@ module.exports = () => {
   try {
     admin.initializeApp({
       credential: admin.credential.cert(serviceAccount),
-      databaseURL: "https://foxybot-dfe4a-default-rtdb.firebaseio.com"
+      databaseURL: `${process.env.DATABASE_URL}`
     })
     console.log(`[${moment().tz("America/Sao_Paulo").calendar()}] Firebase Realtime Database foi Conectado com Sucesso!`);
     return admin.database();
