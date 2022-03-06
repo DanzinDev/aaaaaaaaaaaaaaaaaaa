@@ -1,4 +1,4 @@
-const { Client, CommandInteraction, MessageEmbed } = require("discord.js");
+const Discord = require("discord.js");
 
 module.exports = {
   name: 'avatar',
@@ -11,14 +11,14 @@ module.exports = {
       required: false
     }
   ],
-  run: async (client, interaction) => {
+  run: async (client, interaction, guild) => {
 
   const user = interaction.options.getUser("user");
   let member;
   if(user) member = interaction.guild.members.cache.get(user.id);
   else member = interaction.member;
 
-  let embed = new MessageEmbed()
+  let embed = new Discord.MessageEmbed()
     .setColor(`ORANGE`)
     .setURL(member.user.displayAvatarURL({ dynamic: true }))
     .setImage(member.user.displayAvatarURL({ dynamic: true, size: 512 }));

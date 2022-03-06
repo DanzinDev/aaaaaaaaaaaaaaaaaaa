@@ -13,13 +13,14 @@ client.on('ready', async () => {
 
   var tabela = [
 
-		{ name: `© foxy`, type: "WATCHING" },
-    { name: `Mudando para comandos slash (comandos em /)`, type: "WATCHING" }
+		{ name: `© foxy`},
+    { name: `SOU 100% EM COMANDOS EM BARRA (/)`}
   ];
 	function setStatus() {
 		var altstatus = tabela[Math.floor(Math.random() * tabela.length)];
     client.user.setActivity(altstatus.name, {
-			type: altstatus.type
+			type: "STREAMING",
+url: "https://www.twitch.tv/link33d"
 		}); 
 	}
 	setStatus(); 

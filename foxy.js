@@ -1,5 +1,6 @@
 const { Client, Collection, MessageEmbed } = require('discord.js');
 const fs = require('fs')
+const { GiveawaysManager } = require('discord-giveaways');
 const client = new Client({
     intents: 32767
 });
@@ -17,6 +18,5 @@ module.exports = client;
 ["events", "slashcommands", "commands"].forEach(handler => {
   require(`./Structures/${handler}`)(client);
 });
-
 
 client.login(process.env.TOKEN);

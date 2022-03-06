@@ -29,10 +29,19 @@ module.exports = {
     let picareta = await database.ref(picaretaDir).once('value')
     picareta = picareta.val() || 0
 
+let bilheteDir = `user/${member.user.id}/itens/bilhete`
+    let bilhete = await database.ref(bilheteDir).once('value')
+    bilhete = bilhete.val() || 0
+
     var inventario = new Discord.MessageEmbed()
       .setTitle(`🎒 Inventario de ${member.user.username}!`)
       .setColor('ORANGE')
-      .addField(`SEUS ITENS:`, `<:vara_de_pescar:919286250953912421> (${pescar}) Vara de pescar\n<:picareta:851563044140351535> (${picareta}) Picareta`)
+.setDescription(`
+Seus Itens:
+<:vara_de_pescar:919286250953912421> (${pescar}) Vara de pesca(s)
+<:picareta:851563044140351535> (${picareta}) Picareta(s)
+🎟️ (${bilhete}) Bilhete(s)
+`)
       .setTimestamp()
 
     interaction.reply({ embeds: [inventario] })
